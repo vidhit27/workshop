@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<body>
+    <div style="background-color: black; width: 10000px; height: 10000px; padding: 0%; margin: 0%;">
+        <h1>shape selector</h1>
+<div id="shape" style="height: 100px; width:200px;background-color:blue;margin-left: 500px;margin-bottom: 100px;"></div>
+<h1 style="color: lawngreen; margin-left: 500px;">shape selector</h1>    
+<button onclick="rectangle()" style="background-color: red;margin-left: 500px; margin-bottom: 500px; ">Rectangle</button>
+<button onclick="square()" style="background-color: yellow;" >Square</button>
+<button onclick="circle()" style="background-color:green ;">circle</button>
+</body>
+<script>
+    function rectangle()
+    {
+        document.getElementById('shape').style.height='100px';
+        document.getElementById('shape').style.width='200px';
+        document.getElementById('shape').style['border-radius']='0%';
+        document.getElementById('shape').style['background-color']='red';
+    }
+    function square()
+    {
+        document.getElementById('shape').style.height='100px';
+        document.getElementById('shape').style.width='100px';
+        document.getElementById('shape').style['border-radius']='0%';
+        document.getElementById('shape').style['background-color']='yellow';
+    }
+    function circle()
+    {
+        document.getElementById('shape').style.height='100px';
+        document.getElementById('shape').style.width='100px';
+        document.getElementById('shape').style['background-color']='green';
+        document.getElementById('shape').style['border-radius']='70%';
+    }
+
+</script>
+</div>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
