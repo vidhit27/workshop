@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <body>
+      <div style="width: 10000px; height: 10000px; background-color: black;">
+      <h1 style="color: lawngreen; margin-left: 500px">Calculator</h1>
+        <input type="number" placeholder="first number" id="fno" style="margin-left: 500px; height: 50px;">
+        <input type="number" placeholder="second number" id="sno" style="height: 50px; ;" >
+        <h4 id="ca" style="color: lawngreen;margin-left: 500px">result: </h4>
+        <button onclick="sum()"style="margin-left: 500px; " >add</button>
+        <br>
+        <br>
+        <button onclick="multiply()"style="margin-left: 500px;">multiply</button>
+        <br>
+        <br>
+<button onclick="divide()"style="margin-left: 500px;" >divide</button>
+<br>
+<br>
+<button onclick="subtract()" style="margin-left: 500px;" >subtract</button>
+<br>
+<br>
+</body>
+<script>
+    function sum()
+    {
+        var sum=document.getElementById('ca');
+        var fno=document.getElementById('fno').value;
+      var sno=document.getElementById('sno').value;
+      sum.innerHTML=Number(fno)+Number(sno);
+          
+    }
+    function multiply()
+    {var sum=document.getElementById('ca');
+    
+        var fno=document.getElementById('fno').value;
+      var sno=document.getElementById('sno').value;
+      sum.innerHTML=Number(fno)*Number(sno);    
+    }
+    function divide()
+    {  if(Number(sno)==0)
+     return sum.innerText ="Division not possible" 
+        var sum=document.getElementById('ca');
+        var fno=document.getElementById('fno').value;
+      var sno=document.getElementById('sno').value;
+      
+      sum.innerHTML=Number(fno)/Number(sno);    
+    }
+    function subtract()
+    {var sum=document.getElementById('ca');
+
+        var fno=document.getElementById('fno').value;
+      var sno=document.getElementById('sno').value;
+            sum.innerHTML=Number(fno)-Number(sno);    
+    }
+
+</script>
+
+</div>
+</html>
